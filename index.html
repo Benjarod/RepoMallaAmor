@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva Enfermería – UNAP</title>
+  <meta name="description" content="Explora la malla curricular interactiva de Enfermería en la Universidad Arturo Pratt. Descubre requisitos por semestre y desbloquea ramos al aprobar.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <h1>Enfermería</h1>
+  <div class="malla-grid">
+    <div class="semestre" id="sem1">
+      <h2>1° Semestre</h2>
+      <div class="ramo" id="introCienciaCuidado" onclick="aprobar('introCienciaCuidado')">Introducción A La Ciencia Del Cuidado</div>
+      <div class="ramo" id="PromSaEnfBasConTeo" onclick="aprobar('PromSaEnfBasConTeo')">Promoción De Salud En Enfermería Bases Conceptuales Y Teóricas</div>
+      <div class="ramo" id="CienBasCuiI" onclick="aprobar('CienBasCuiI')">Ciencias Básicas Para El Cuidado I</div>
+    </div>
+
+    <div class="semestre" id="sem2">
+      <h2>2° Semestre</h2>
+      <div class="ramo" id="SHFCCC" onclick="aprobar('SHFCCC')">Ser Humano, Familia y Comunidad Como Centro De Cuidado</div>
+      <div class="ramo" id="HCIEPS" onclick="aprobar('HCIEPS')">Habilidades Comunicacionales, Interacción y Educación para la Promoción de la Salud</div>
+      <div class="ramo bloqueado" id="CBCII" onclick="aprobar('CBCII')">Ciencias Básicas para el Cuidado II</div>
+    </div>
+
+    <div class="semestre" id="sem3">
+      <h2>3° Semestre</h2>
+      <div class="ramo" id="CDH" onclick="aprobar('CDH')">Cuidado En El Desarrollo Humano</div>
+      <div class="ramo" id="SSC" onclick="aprobar('SSC')">Sistemas De Salud En Chile</div>
+      <div class="ramo" id="PSPECVIF" onclick="aprobar('PSPECVIF')">Promoción de la Salud, Prevención de la Enfermedad en el Ciclo Vital Individual y Familiar</div>
+      <div class="ramo bloqueado" id="CAPC" onclick="aprobar('CAPC')">Ciencias Aplicadas para el Cuidado</div>
+    </div>
+
+    <div class="semestre" id="sem4">
+      <h2>4° Semestre</h2>
+      <div class="ramo bloqueado" id="CEAAMPE" onclick="aprobar('CEAAMPE')">Cuidados Enfermeros del Adulto y Adulto Mayor en el Proceso de Enfermedad</div>
+      <div class="ramo" id="PBAGC" onclick="aprobar('PBAGC')">Principios Básicos de la Administración y Gestión del Cuidado</div>
+      <div class="ramo bloqueado" id="PSPEHMA" onclick="aprobar('PSPEHMA')">Promoción de la Salud y Prevención de la Enfermedad en el Hombre y Mujer Adultos</div>
+      <div class="ramo bloqueado" id="BEBE" onclick="aprobar('BEBE')">Bases Epidemiológicas y Bioestadísticas en Enfermería</div>
+    </div>
+
+    <div class="semestre" id="sem5">
+      <h2>5° Semestre</h2>
+      <div class="ramo" id="EGI" onclick="aprobar('EGI')">Electivo General I</div>
+      <div class="ramo bloqueado" id="CEAAMCSE" onclick="aprobar('CEAAMCSE')">Cuidados Enfermeros del Adulto y Adulto Mayor en el Continum Salud - Enfermedad</div>
+      <div class="ramo" id="CEG" onclick="aprobar('CEG')">Cuidados de Enfermería Gerontológicos</div>
+      <div class="ramo" id="EE" onclick="aprobar('EE')">Emprendimiento en Enfermería</div>
+    </div>
+
+    <div class="semestre" id="sem6">
+      <h2>6° Semestre</h2>
+      <div class="ramo" id="EGII" onclick="aprobar('EGII')">Electivo General II</div>
+      <div class="ramo bloqueado" id="CENAPE" onclick="aprobar('CENAPE')">Cuidados Enfermeros del Niño y Adolescente en el Proceso de Enfermedad</div>
+      <div class="ramo" id="PSPENA" onclick="aprobar('PSPENA')">Promoción de la Salud y Prevención de la Enfermedad en el Niño y Adolescente</div>
+      <div class="ramo bloqueado" id="ICE" onclick="aprobar('ICE')">Investigación Cuantitativa en Enfermería</div>
+    </div>
+
+    <div class="semestre" id="sem7">
+      <h2>7° Semestre</h2>
+      <div class="ramo bloqueado" id="CENACSE" onclick="aprobar('CENACSE')">Cuidados Enfermeros del Niño y Adolescente en el Continum Salud Enfermedad</div>
+      <div class="ramo" id="GLE" onclick="aprobar('GLE')">Gestión y Liderazgo en Enfermería</div>
+      <div class="ramo" id="ICEE" onclick="aprobar('ICEE')">Investigación Cualitativa en Enfermería</div>
+      <div class="ramo" id="EPI" onclick="aprobar('EPI')">Electivo Profesional I</div>
+    </div>
+
+    <div class="semestre" id="sem8">
+      <h2>8° Semestre</h2>
+      <div class="ramo" id="EGIII" onclick="aprobar('EGIII')">Electivo General III</div>
+      <div class="ramo bloqueado" id="CEEU" onclick="aprobar('CEEU')">Cuidados Enfermeros en Emergencias y Urgencias</div>
+      <div class="ramo bloqueado" id="GGC" onclick="aprobar('GGC')">Gestión y Gerencia del Cuidado</div>
+      <div class="ramo" id="EPII" onclick="aprobar('EPII')">Electivo Profesional II</div>
+    </div>
+
+    <div class="semestre" id="sem9">
+      <h2>9° Semestre</h2>
+      <div class="ramo bloqueado" id="IC" onclick="aprobar('IC')">Internado Comunitario</div>
+    </div>
+
+    <div class="semestre" id="sem10">
+      <h2>10° Semestre</h2>
+      <div class="ramo bloqueado" id="ICLI" onclick="aprobar('ICLI')">Internado Clínico</div>
+      <div class="ramo bloqueado" id="AT" onclick="aprobar('AT')">Actividad De Titulación</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <style>
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #c2185b;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  </style>
+</body>
+</html>
