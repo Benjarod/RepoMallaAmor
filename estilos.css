@@ -55,6 +55,24 @@ h1 {
   user-select: none;
 }
 
+.info-btn {
+  margin-left: 8px;
+  padding: 2px 6px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background: transparent; /* Sin fondo */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.info-btn:hover {
+  background: #f8bbd0; /* Opcional: leve fondo rosa al pasar el mouse */
+}
+
 .ramo:hover {
   background: linear-gradient(145deg, #f48fb1, #e47c9d);
   box-shadow: 6px 6px 10px #b67288, -6px -6px 10px #ffbed4;

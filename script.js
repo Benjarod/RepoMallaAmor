@@ -83,3 +83,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   actualizarDesbloqueos();
 });
+
+function mostrarAnuncio(event, texto) {
+  event.stopPropagation(); // Evita que se apruebe el ramo al apretar el botón
+  alert(texto);
+} 
