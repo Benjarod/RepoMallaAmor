@@ -66,6 +66,41 @@ function aprobar(e) {
   actualizarDesbloqueos();
 }
 
+function crearMoñosDecorativos() {
+  const contenedor = document.getElementById('moños-decorativos');
+  if (!contenedor) return;
+  contenedor.innerHTML = '';
+
+  const ancho = window.innerWidth;
+  const alto = window.innerHeight;
+  const moñoSize = 60;
+  const espacioX = 200;
+  const espacioY = 120;
+
+  // Suma 1 a filas para cubrir el borde inferior
+  const columnas = Math.floor(ancho / espacioX);
+  const filas = Math.floor(alto / espacioY) + 1;
+
+  for (let fila = 0; fila < filas; fila++) {
+    for (let col = 0; col < columnas; col++) {
+      const moño = document.createElement('img');
+      moño.className = 'moño-svg';
+      moño.src = 'moño'; // Cambia la ruta si tu imagen está en otra carpeta
+
+      const offset = (fila % 2 === 0) ? 0 : espacioX / 2;
+      const left = col * espacioX + offset;
+      const top = fila * espacioY;
+
+      if (left + moñoSize > ancho) continue;
+
+      moño.style.left = left + 'px';
+      moño.style.top = top + 'px';
+      moño.style.transform = `rotate(-20deg) scale(0.9)`;
+      contenedor.appendChild(moño);
+    }
+  }
+}
+
 // Al cargar la página, asignar eventos, cargar progreso y actualizar desbloqueos
 window.addEventListener('DOMContentLoaded', () => {
   const todosRamos = document.querySelectorAll('.ramo');
@@ -75,6 +110,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (aprobados.includes(ramo.id)) {
       ramo.classList.add('aprobado');
     }
+    crearMoñosDecorativos();
   });
 
   todosRamos.forEach(ramo => {
@@ -82,6 +118,10 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   actualizarDesbloqueos();
+});
+
+window.addEventListener('resize', () => {
+  crearMoñosDecorativos();
 });
 
 // ...existing code...
