@@ -102,3 +102,23 @@ h1 {
   font-style: italic;
   box-shadow: 4px 4px 8px #8a69a2, -4px -4px 8px #c6aee1;
 }
+
+.ramo-info {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s;
+  background: #eec3d2;
+  color: #ad1457;
+  margin-top: 10px;
+  padding: 0 8px;
+  border-radius: 6px;
+  font-size: 0.98em;
+  box-shadow: 0 2px 8px #f8bbd0;
+}
+
+.ramo-info.activo {
+  max-height: 120px; /* Ajusta según el contenido */
+  opacity: 1;
+  padding: 12px 8px;
+}

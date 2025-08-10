@@ -17,11 +17,14 @@
       <div class="ramo" id="introCienciaCuidado" onclick="aprobar('introCienciaCuidado')">Introducción A La Ciencia Del Cuidado</div>
       <div class="ramo" id="PromSaEnfBasConTeo" onclick="aprobar('PromSaEnfBasConTeo')">Promoción De Salud En Enfermería Bases Conceptuales Y Teóricas</div>
       <div class="ramo" id="CienBasCuiI" onclick="aprobar('CienBasCuiI')">Ciencias Básicas Para El Cuidado I </br>
-        <button class="info-btn" onclick="mostrarAnuncio(event, 'Matemáticas - Bioquímica - Biología - Anatomía')">
+        <button class="info-btn" onclick="toggleRamoInfo(event, 'info-CienBasCuiI')">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
             <path d="M5 7l4 4 4-4" stroke="#e91e63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
+        <div class="ramo-info" id="info-CienBasCuiI">
+          Matemáticas<br>Bioquímica<br>Biología<br>Anatomía
+        </div>
       </div>
     </div>
 
@@ -30,11 +33,14 @@
       <div class="ramo" id="SHFCCC" onclick="aprobar('SHFCCC')">Ser Humano, Familia y Comunidad Como Centro De Cuidado</div>
       <div class="ramo" id="HCIEPS" onclick="aprobar('HCIEPS')">Habilidades Comunicacionales, Interacción y Educación para la Promoción de la Salud</div>
       <div class="ramo bloqueado" id="CBCII" onclick="aprobar('CBCII')">Ciencias Básicas para el Cuidado II </br>
-        <button class="info-btn" onclick="mostrarAnuncio(event, 'Histología - Microbiología - Anatomía - Fisiología')">
+        <button class="info-btn" onclick="toggleRamoInfo(event, 'info-CBCII')">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
             <path d="M5 7l4 4 4-4" stroke="#e91e63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
+        <div class="ramo-info" id="info-CBCII">
+          Histología</br>Microbiología</br>Anatomía</br>Fisiología
+        </div>
       </div>
     </div>
 
@@ -44,11 +50,14 @@
       <div class="ramo" id="SSC" onclick="aprobar('SSC')">Sistemas De Salud En Chile</div>
       <div class="ramo" id="PSPECVIF" onclick="aprobar('PSPECVIF')">Promoción de la Salud, Prevención de la Enfermedad en el Ciclo Vital Individual y Familiar</div>
       <div class="ramo bloqueado" id="CAPC" onclick="aprobar('CAPC')">Ciencias Aplicadas para el Cuidado </br>
-        <button class="info-btn" onclick="mostrarAnuncio(event, 'Farmacología - Fisiopatología')">
+        <button class="info-btn" onclick="toggleRamoInfo(event, 'info-CAPC')">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
             <path d="M5 7l4 4 4-4" stroke="#e91e63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
+        <div class="ramo-info" id="info-CAPC">
+          Farmacología</br>Fisiopatología
+        </div>
       </div>
     </div>
 
@@ -58,11 +67,14 @@
       <div class="ramo" id="PBAGC" onclick="aprobar('PBAGC')">Principios Básicos de la Administración y Gestión del Cuidado</div>
       <div class="ramo bloqueado" id="PSPEHMA" onclick="aprobar('PSPEHMA')">Promoción de la Salud y Prevención de la Enfermedad en el Hombre y Mujer Adultos</div>
       <div class="ramo bloqueado" id="BEBE" onclick="aprobar('BEBE')">Bases Epidemiológicas y Bioestadísticas en Enfermería </br>
-        <button class="info-btn" onclick="mostrarAnuncio(event, 'Epidemiológia - Bioestadística')">
+        <button class="info-btn" onclick="toggleRamoInfo(event, 'info-BEBE')">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
             <path d="M5 7l4 4 4-4" stroke="#e91e63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
+        <div class="ramo-info" id="info-BEBE">
+          Epidemiológia</br>Bioestadística
+        </div>
       </div>
     </div>
 
